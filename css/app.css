@@ -1,0 +1,626 @@
+/*!
+ *
+ * Copyright 2016 CREATEC(www.createcdigital.com)
+ *
+ */
+
+@charset "utf-8";
+
+/* reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0
+}
+
+html,
+body {
+	height: 100%
+}
+
+body,
+input,
+button,
+textarea,
+select {
+	font-size: 16px;
+	font-family: "SimHei", Tahoma, Helvetica, Arial;
+	color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+li,
+dd {
+	list-style: none
+}
+
+a {
+	color: #d30000;
+	text-decoration: none
+}
+
+a:hover,
+a:active {
+	text-decoration: underline
+}
+
+section,
+article,
+aside,
+header,
+footer,
+nav,
+dialog,
+figure,
+hgroup {
+	display: block
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* android */
+
+select {
+	-webkit-appearance: none;
+}
+
+
+/*  background-color: transparent; */
+
+
+/*-- index.html
+====================================================== */
+
+.swiper-container {
+	width: 640px;
+	height: 100%;
+	background: #000000;
+	margin: 0 auto;
+	display: none;
+	user-select: none;
+	touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+
+/* loading */
+
+body {
+	backgr ound: #000;
+	background: -moz-radial-gradient(circle, #000, #000);
+	background: #000;
+	overflow: hidden;
+}
+
+
+.loader {
+	margin: 0 auto;
+	width: 640px;
+	position: absolute;
+}
+
+.l-1 {
+	position: absolute;
+	z-index: 0;
+}
+
+.l-2 {
+	position: absolute;
+	top: 218px;
+	left: 146px;
+	z-index: 100;
+	nimation: triangle-rotate 4.5s linear infinite;
+	-webkit-animation: triangle-rotate 4s linear infinite;
+
+}
+
+.l-3 {
+	position: absolute;
+	top: 241px;
+	left: 164px;
+	z-index: 200;
+	nimation: triangle-loding 3s linear 0.75s infinite;
+	-webkit-animation: triangle-loding 3s linear 0.75s infinite;
+
+}
+
+.l-4 {
+	position: absolute;
+	top: 294px;
+	left: 214px;
+	z-index: 300;
+	nimation: triangle-loding 3s linear 0.75s infinite;
+	-webkit-animation: triangle-loding 3s linear 0.75s infinite;
+
+}
+
+@keyframes triangle-loding {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes triangle-loding {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		lopacity: 0;
+	}
+}
+
+/* p1 */
+
+.p1 {
+	height: 100%;
+}
+
+.p1 .e1-1 {
+	position: absolute;
+	top: 757px;
+	left: 236px;
+	z-index: 1000;
+}
+
+.p1 .e1-2 {
+	position: absolute;
+	top: 736px;
+	left: 107px;
+}
+
+.p1 .e1-3 {
+	position: absolute;
+	top: 418px;
+	left: 114px;
+}
+
+.p1 .e1-4 {
+	position: absolute;
+	top: 133px;
+	left: 124px;
+	z-index: 1000;
+}
+
+.p1 .e1-5 {
+	position: absolute;
+	top: 75px;
+	left: 167px;
+	z-index: 500;
+}
+
+.p1 .e1-6 {
+	position: absolute;
+	top: 129px;
+	left: 214px;
+	z-index: 900;
+}
+
+.p1 .e1-7 {
+	position: absolute;
+	top: 64px;
+	left: 147px;
+	animation: triangle-rotate 4.5s linear infinite;
+	-webkit-animation: triangle-rotate 4s linear infinite;
+}
+
+@keyframes triangle-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes triangle-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+/* p2 */
+
+.p2 .e2-1 {
+	position: absolute;
+	top: 897px;
+	left: 64px;
+	height: 60px;
+	width: 514px;
+}
+
+.p2 .e2-2 {
+	position: absolute;
+	top: 52px;
+	left: 140px;
+}
+
+.p2 .in-1 {
+	position: absolute;
+	font-family: Microsoft YaHei, "微软雅黑", "黑体", "宋体", Arial;
+	height: 49px;
+	width: 410px;
+	margin-left: 0px;
+	margin-top: 0px;
+	font-size: 28px;
+	font-weight: bold;
+	background-color: transparent;
+	color: #A57D2F;
+	border: 0;
+	border-color: transparent;
+	text-decoration: none;
+	padding-left: 15px;
+	-webkit-appearance: none;
+
+}
+
+.p2 .e2-3 {
+	position: absolute;
+	top: 228px;
+	left: 113px;
+}
+
+.p2 .e2-4 {
+	position: absolute;
+	top: 365px;
+	left: 113px;
+}
+
+.p2 .e2-5 {
+	position: absolute;
+	top: 510px;
+	left: 113px;
+}
+
+.p2 .e2-6 {
+	position: absolute;
+	top: 656px;
+	left: 113px;
+	padding-left: 55px;
+             
+}
+.p2 select >option{color: #A57D2F;}
+.p2 .e2-6  .e2-7 option {
+	background: #000;
+	color: #A57D2F;
+}
+
+.p2 .e2-7 {
+	position: absolute;
+	top: 797px;
+	left: 113px;
+	padding-left: 55px;
+}
+.p2 .e2-8 {
+	display: none;
+	position: absolute;
+	top: 819px;
+	left: 484px;
+}
+	
+
+
+/* p3 */
+
+.p3 .e3-1 {
+	position: absolute;
+	top: 579px;
+	left: 484px;
+	opacity: 0;
+}
+
+.p3 .e3-2 {
+	position: absolute;
+	top: 359px;
+	left: 53px;
+	height: 60px;
+	width: 514px;
+}
+
+.p3 .e3-3 {
+	position: absolute;
+	top: 685px;
+	left: 53px;
+	height: 60px;
+	width: 514px;
+}
+
+.p3 .e3-4 {
+	position: absolute;
+	top: 92px;
+	left: 100px;
+}
+
+.p3 .e3-5 {
+	position: absolute;
+	top: 527px;
+	left: 475px;
+}
+
+.p3 .e3-6 {
+	position: absolute;
+	top: 527px;
+	left: 95px;
+}
+.p3 .e3-7 {
+	position: absolute;
+	display: none;
+	top: 260px;
+	left: 484px;
+}
+
+
+/* p4 */
+
+.p4 .e4-1 {
+	position: absolute;
+	top: 175px;
+	left: 75px;
+	z-index: 1000;
+}
+
+.p4 .e4-2 {
+	position: absolute;
+	top: 647px;
+	left: 50px;
+}
+
+.p4 .e4-3 {
+	position: absolute;
+	top: 579px;
+	left: 484px;
+	opacity: 0;
+}
+
+.p4 .e4-4 {
+	position: absolute;
+	top: 110px;
+	left: 168px;
+	z-index: 500;
+}
+
+.p4 .e4-5 {
+	position: absolute;
+	top: 145px;
+	left: 220px;
+	z-index: 900;
+}
+
+.p4 .e4-6 {
+	position: absolute;
+	top: 62px;
+	left: 112px;
+	animation: triangle1-rotate 4.5s linear infinite;
+	-webkit-animation: triangle-rotate 4s linear infinite;
+}
+@keyframes triangle1-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes triangle1-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+.p4 .e4-7 {
+	position: absolute;
+	top: 620px;
+	width: 505px;
+	left: 63px;
+	color: #A57D2F;
+	font: 65px/40px Helvetica, "Microsoft YaHei", sans-serif;
+	text-align: center;
+}
+.p4 .e4-8 {
+	position: absolute;
+	top: 890px;
+	left: 64px;
+	height: 60px;
+	width: 514px;
+}
+.p4 .e4-9 {
+	position: absolute;
+	top: 617px;
+	left: 465px;
+}
+
+.p4 .e4-10 {
+	position: absolute;
+	top: 617px;
+	left: 119px;
+}
+.p4 .e4-11 {
+	position: absolute;
+	top: 825px;
+	left: 428px;
+}
+
+/* p5 */
+
+.p5 .e5-1 {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	z-index: 1000;
+}
+
+.p5 .e5-2 {
+	position: absolute;
+	top: 647px;
+	left: 50px;
+}
+
+.p5 .e5-3 {
+	position: absolute;
+	top: 579px;
+	left: 484px;
+	opacity: 0;
+}
+
+.p5 .e5-4 {
+	position: absolute;
+	top: 110px;
+	left: 168px;
+	z-index: 500;
+}
+
+.p5 .e5-5 {
+	position: absolute;
+	top: 145px;
+	left: 220px;
+	z-index: 900;
+}
+
+.p5 .e5-6 {
+	position: absolute;
+	top: 62px;
+	left: 112px;
+	animation: triangle2-rotate 4.5s linear infinite;
+	-webkit-animation: triangle-rotate 4s linear infinite;
+}
+
+.p5 .e5-7 {
+	position: absolute;
+	width: 505px;
+	top: 620px;
+	color: #A57D2F;
+	left: 63px;
+	font: 65px/40px Helvetica, "Microsoft YaHei", sans-serif;
+	text-align: center;
+}
+
+@keyframes triangle2-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes triangle2-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+.p5 .e5-8 {
+	position: absolute;
+	top: 890px;
+	left: 64px;
+	height: 60px;
+	width: 514px;
+}
+.p5 .e5-9 {
+	position: absolute;
+	top: 617px;
+	left: 465px;
+}
+
+.p5 .e5-10 {
+	position: absolute;
+	top: 617px;
+	left: 119px;
+}
+.p5 .e5-11 {
+	position: absolute;
+	top: 825px;
+	left: 484px;
+}
+
+
+/*mask*/
+
+.mask {
+	display: none;
+	position: absolute;
+	top: center;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1002;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+}
+
+.mask span {
+	margin-top: 50%;
+	color: #A57D2F;
+	font: 65px/65px Helvetica, "Microsoft YaHei", sans-serif;
+	text-align: center;
+	display: block;
+}
